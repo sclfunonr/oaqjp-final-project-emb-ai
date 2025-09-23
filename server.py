@@ -15,9 +15,10 @@ def run_emotion_detection():
     
     # Check if a dominant emotion was found
     if emotions['dominant_emotion'] is None:
-        return "Invalid text! Try again."
+        return "Invalid text! Please try again!"
 
     dominant_emotion = emotions['dominant_emotion']
+
     emotions.pop('dominant_emotion', None)  # Remove dominant_emotion from dictionary
     
     # Format the emotions for display
