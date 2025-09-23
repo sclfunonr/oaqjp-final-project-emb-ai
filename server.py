@@ -4,7 +4,7 @@ from EmotionDetection.emotion_detection import emotion_detector
 app = Flask('Emotion_Detector')
 
 @app.route("/emotionDetector")
-def run_emotion_detector():
+def run_emotion_detection():
     text_to_analyze = request.args.get('textToAnalyze')
     
     # Check for empty or invalid input
